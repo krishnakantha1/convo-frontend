@@ -1,0 +1,45 @@
+section {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+}
+img {
+  width: 25vw;
+  height: auto;
+}
+section div {
+  width: 40%;
+  color: white;
+}
+
+section div h2 {
+  position: relative;
+}
+
+section div p span {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+section div p {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+  section div {
+    width: 90%;
+    margin: 1rem 0;
+  }
+  img {
+    width: 40vw;
+    height: auto;
+  }
+  section:nth-child(2) {
+    flex-flow: column-reverse;
+  }
+}
